@@ -1,0 +1,52 @@
+/* reset e estilos gerais */
+
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* super info */
+
+.header-info {
+    background: #122ab2;
+    color: #fff;
+}
+
+.header-info a{
+    color: #fff;
+}
+
+.info-int {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-info p, .header-info a {
+    margin: 10px;
+}
+
