@@ -4,11 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>FlexBlog</title>
 </head>
 
 <body>
+
+    <div class="header-info-sup">
+        <p>Seg / Sex - 08:00 às 18:00</p>
+        <a href="tel:+55219999-9999">+55 21 9999-9999</a>
+        <p>Av. Ali Perto, 330, Botafogo - RJ</p>
+    </div><!-- final do header info -->
+
+    <header class="header">
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="">FlexBlog</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#produtos">produtos</a></li>
+                    <li><a href="#preco">preço</a></li>
+                    <li><a href="#qualidade">qualidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- final do header -->
+
+    <h1 class="introducao">Novos valores e <br>Propriedades de Css</h1>
+
+    <section id="#sobre">
+        <div class="sobre-info">
+            <h1>sobre</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dolores optio nemo velit, aspernatur
+                ipsa! Unde a error voluptatem ipsum est eum hic voluptates debitis quo commodi. Quasi, repellat
+                provident.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dolores optio nemo velit, aspernatur
+                ipsa! Unde a error voluptatem ipsum est eum hic voluptates debitis quo commodi. Quasi, repellat
+                provident.</p>
+        </div>
+        <div class="sobre-img">
+            <img src="img/sobre1.jpg" alt="Sobre 1">
+        </div>
+        <div class="sobre-img">
+            <img src="img/sobre2.jpg" alt="Sobre 2">
+        </div>
+    </section><!-- final do sobre -->
+
+    <section id="produtos">
+        <h1>Produtos</h1>
+        <div class="produtos-container">
+            <div class="produtos-item purple">
+                <h2>Purple</h2>
+                <img src="img/produtos1.jpg" alt="Produtos 1">
+            </div>
+            <div class="produtos-item pink">
+                <h2>Pink</h2>
+                <img src="img/produtos2.jpg" alt="Produtos 2">
+            </div>
+            <div class="produtos-item blue">
+                <h2>Purple</h2>
+                <img src="img/produtos3.jpg" alt="Produtos 3">
+            </div>
+        </div>
+    </section><!-- final dos produtos -->
+
+    <section id="preco">
+        <div class="preco-item">
+            <h2>Cobre</h2>
+            <span><sup>R$</sup> 19</span>
+            <ul>
+                <li>Planos Ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteudo Secreto</li>
+                <li>Suporte 24h</li>
+            </ul>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="preco-item">
+            <h2>Prata</h2>
+            <span><sup>R$</sup> 39</span>
+            <ul>
+                <li>Planos Ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteudo Secreto</li>
+                <li>Suporte 24h</li>
+                <li>Compra Exclusiva</li>
+            </ul>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="preco-item">
+            <h2>Ouro</h2>
+            <span><sup>R$</sup> 79</span>
+            <ul>
+                <li>Planos Ilimitados</li>
+                <li>Acesso Restrito</li>
+                <li>Conteudo Secreto</li>
+                <li>Suporte 24h</li>
+                <li>Compra Exclusiva</li>
+                <li>Download dos Itens</li>
+            </ul>
+            <a href="#">Comprar</a>
+        </div>
+    </section><!-- final dos preços -->
+
+    <section id="qualidade">
+        <div class="qualidade-item">
+            <h2>Inteligente</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati laboriosam similique pariatur,
+                asperiores quod.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Compacto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet porro excepturi dignissimos rerum eius inventore quam quos assumenda eligendi, numquam nobis nesciunt suscipit iure debitis repellendus non facere adipisci autem.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Economico</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati laboriosam similique pariatur,
+                asperiores quod.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Transparente</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati laboriosam similique pariatur,
+                asperiores quod.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Opaco</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores molestias, asperiores quisquam libero beatae tempore explicabo eligendi, eum sint sequi odio illo soluta atque natus aperiam veritatis qui voluptatibus reiciendis.</p>
+        </div>
+        <div class="qualidade-item">
+            <h2>Sustentavel</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione obcaecati laboriosam similique pariatur,
+                asperiores quod.</p>
+        </div>
+    </section><!-- final da qualidade -->
+
+    <section class="news">
+        <div class="news-info">
+            <h1>Newsletter</h1>
+            <p>Assine e fique por dentro das novidades</p>
+        </div>
+        <form action="" class="form">
+            <input type="text" name="email" id="email" placeholder="Seu e-mail">
+            <button type="submit"></button>
+        </form>
+    </section><!-- final das news -->
+
+    <footer class="footer">
+        <p>FlexBlog © Todos os direitos reservados.</p>
+    </footer><!-- final do footer -->
 
 </body>
 
