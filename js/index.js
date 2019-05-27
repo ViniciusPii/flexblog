@@ -20,23 +20,26 @@ $(document).ready(function () {
     });
 });
 
-
-
-
 //menu mobile
 var visibilidade = false;
 
 function menu() {
     if (visibilidade) {
         document.getElementById("modal").style.display = "none";
+        document.querySelector(".x").style.display = "none";
+        document.querySelector(".bars").style.display = "block";
         visibilidade = false;
     } else {
         document.getElementById("modal").style.display = "block";
+        document.querySelector(".x").style.display = "block";
+        document.querySelector(".bars").style.display = "none";
         visibilidade = true;
     }
 }
 
 function ocultar() {
     document.getElementById("modal").style.display = "none";
+    document.querySelector(".x").style.display = "none";
+    document.querySelector(".bars").style.display = "block";
     visibilidade = false;
 }
