@@ -10,9 +10,11 @@ $('.topo-menu a[href^="#"], .menu-mobile a[href^="#"]').click(function (e) {
 })
 //abrir e fechar menu completo
 $(window).resize(function () {
-    $('.menu-mobile').hide()
-    $('.icone-cancel').hide()
-    $('.icone-bars').show()
+    if ($(window).width() > 768) {
+        $('.menu-mobile').hide()
+        $('.icone-cancel').hide()
+        $('.icone-bars').show()
+    }
 })
 $('.icone-cancel').hide()
 $(document).ready(function () {
