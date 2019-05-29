@@ -84,7 +84,7 @@ img {
 }
 
 .topo {
-    padding: 25px 0;
+    padding: 20px 0;
     color: #fff;
     align-items: center;
 }
@@ -110,11 +110,7 @@ img {
 }
 
 .topo-menu a:hover {
-    background: #122ab2;
-}
-
-.topo-menu a.menu-active {
-    background: #122ab2;
+    color: #122ab2;
 }
 
 .icone, .menu-mobile {
