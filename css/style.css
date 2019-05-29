@@ -7,7 +7,7 @@ body, h1, h2, p, ul, li, a {
 
 body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #222;
+    color: #6b6b6b;
 }
 
 ul {
@@ -25,6 +25,18 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex {
+    flex: 1 1 300px;
+    padding: 0 20px;
 }
 
 /* super info */
@@ -60,52 +72,52 @@ img {
     }
 }
 
-/* menu */
+/* header */
 
 .header {
     background: #2c70ff;
     position: fixed;
+    top: 0;
     width: 100%;
-    top: 38px;
     z-index: 1;
+    top: 38px;
 }
 
-.menu {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.topo {
+    padding: 25px 0;
+    color: #fff;
     align-items: center;
 }
 
-.menu a {
+.topo-logo {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.topo-logo a{
     color: #fff;
 }
 
-.menu-logo a {
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-.menu-nav ul {
+.topo-menu ul {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-.menu-nav a {
-    text-transform: capitalize;
-    font-size: 1.25rem;
-    padding: 10px;
+.topo-menu a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
-.menu-nav a:hover {
+.topo-menu a:hover {
     background: #122ab2;
 }
 
-.bars, .x {
+.topo-menu a.menu-active {
+    background: #122ab2;
+}
+
+.icone, .menu-mobile {
     display: none;
 }
 
@@ -113,46 +125,39 @@ img {
     .header {
         top: 0;
     }
-    .bars {
-        display: block;
-        margin-right: 20px;
-        color: #fff;
-        font-size: 1.5rem;
+    .flex {
+        padding: 0 60px;
     }
-    .x {
-        display: none;
-        margin-right: 20px;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    #menu-nav {
-        display: none;
-    }
-    #modal {
-        display: none;
-    }
-    .menu-nav-mobile {
-        margin-top: -38px;
+    .topo {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    .topo-menu {
+        display: none;
+    }
+    .menu-mobile {
+        position: fixed;
+        top: 66px;
         width: 100%;
         height: 100vh;
-        position: fixed;
-        background: #2c70fff5;
-        z-index: 1;
-    }
-    .menu-nav-mobile ul {
-        margin-top: -90px;
-    }
-    .menu-nav-mobile li {
-        display: flex;
-        justify-content: center;
-    }
-    .menu-nav-mobile a {
-        color: #f7f7f7;
+        background: rgb(44, 112, 255, .98);
+        display: none;
         text-transform: uppercase;
-        line-height: 13vh;
+    }
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-mobile a {
+        line-height: 15vh;
+        color: #fff;
+    }
+    .icone {
+        display: block;
+        margin-right: 20px;
+        font-size: 2rem;
     }
 }
 

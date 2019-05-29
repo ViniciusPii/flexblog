@@ -11,7 +11,6 @@
         integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
         crossorigin="anonymous"></script>
     <script src="js/jquery-3.4.0.min.js"></script>
-    <script src="js/index.js"></script>
     <title>FlexBlog</title>
 </head>
 
@@ -26,35 +25,36 @@
     </div><!-- final do header info -->
 
     <header class="header">
-        <div class="menu">
-            <div class="menu-logo">
-                <a href="">FlexBlog</a>
+        <div class="topo container">
+            <div class="topo-logo">
+                <a href="#">FlexBlog</a>
             </div>
-            <nav id="menu-nav" class="menu-nav">
+            <div class="icone-bars">
+                <i class="fas fa-bars icone"></i>
+            </div>
+            <div class="icone-cancel">
+                <i class="fas fa-times icone"></i>
+            </div>
+            <nav class="topo-menu flex">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">home</a></li>
                     <li><a href="#sobre">sobre</a></li>
                     <li><a href="#produtos">produtos</a></li>
                     <li><a href="#preco">preço</a></li>
                     <li><a href="#qualidade">qualidade</a></li>
                 </ul>
             </nav>
-            <i class="fas fa-bars bars" onclick="menu()"></i>
-            <i class="fas fa-times x" onclick="menu()"></i>
+            <nav class="menu-mobile">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#produtos">produtos</a></li>
+                    <li><a href="#preco">preço</a></li>
+                    <li><a href="#qualidade">qualidade</a></li>
+                </ul>
+            </nav>
         </div>
     </header><!-- final do header -->
-
-    <div id="modal">
-        <nav class="menu-nav-mobile">
-            <ul>
-                <li><a href="#home" onclick="ocultar()">Home</a></li>
-                <li><a href="#sobre" onclick="ocultar()">sobre</a></li>
-                <li><a href="#produtos" onclick="ocultar()">produtos</a></li>
-                <li><a href="#preco" onclick="ocultar()">preço</a></li>
-                <li><a href="#qualidade" onclick="ocultar()">qualidade</a></li>
-            </ul>
-        </nav>
-    </div>
 
     <h1 id="home" class="introducao">Novos valores e <br>Propriedades de Css</h1>
 
@@ -190,7 +190,7 @@
     <footer class="footer">
         <p>FlexBlog © Todos os direitos reservados.</p>
     </footer><!-- final do footer -->
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

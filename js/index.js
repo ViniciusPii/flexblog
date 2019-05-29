@@ -1,45 +1,37 @@
-// scroll smooth jquery
+// scroll suave
+$('.topo-menu a[href^="#"], .menu-mobile a[href^="#"]').click(function (e) {
+    e.preventDefault()
+    var id = $(this).attr('href'),
+        menuHeight = $('.topo').innerHeight(),
+        targetOffset = $(id).offset().top
+    $('html, body').animate({
+        scrollTop: targetOffset - menuHeight
+    }, 500)
+})
+//abrir e fechar menu completo
+$(window).resize(function () {
+    $('.menu-mobile').hide()
+    $('.icone-cancel').hide()
+    $('.icone-bars').show()
+})
+$('.icone-cancel').hide()
 $(document).ready(function () {
-    $(".menu-nav a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 109 //tamaho do seu menu.
-            }, 800);
-        }
-    });
-    $("#modal a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 71 //tamaho do seu menu.
-            }, 800);
-        }
-    });
-});
-
-//menu mobile
-var visibilidade = false;
-
-function menu() {
-    if (visibilidade) {
-        document.getElementById("modal").style.display = "none";
-        document.querySelector(".x").style.display = "none";
-        document.querySelector(".bars").style.display = "block";
-        visibilidade = false;
-    } else {
-        document.getElementById("modal").style.display = "block";
-        document.querySelector(".x").style.display = "block";
-        document.querySelector(".bars").style.display = "none";
-        visibilidade = true;
-    }
-}
-
-function ocultar() {
-    document.getElementById("modal").style.display = "none";
-    document.querySelector(".x").style.display = "none";
-    document.querySelector(".bars").style.display = "block";
-    visibilidade = false;
-}
+    $('.icone-bars').click(function () {
+        $('.menu-mobile').toggle()
+        $('.icone-bars').hide()
+        $('.icone-cancel').show()
+        $('.menu-mobile').click(function () {
+            $('.menu-mobile').hide()
+            $('.icone-cancel').hide()
+            $('.icone-bars').show()
+        })
+    })
+    $('.icone-cancel').click(function () {
+        $('.menu-mobile').toggle()
+        $('.icone-bars').show()
+        $('.icone-cancel').hide()
+        $('.menu-mobile').click(function () {
+            $('.menu-mobile').hide()
+        })
+    })
+})
